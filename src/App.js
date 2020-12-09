@@ -1,13 +1,21 @@
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-green-500 bg-black">Hello World</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-        tenetur sed dolorem unde minus delectus ipsam vero, accusamus architecto
-        iste dicta eaque mollitia suscipit veniam fuga nam impedit labore modi.
-      </p>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route component={Home} path="/" exact />
+        <Route component={Projects} path="/projects" />
+        <Route component={About} path="/about" />
+        <Route component={Contact} path="/contact" />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
