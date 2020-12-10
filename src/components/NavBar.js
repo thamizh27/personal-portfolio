@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <header className="font-sans text-2xl border-b-2 border-gray-300 shadow-sm">
-      <div className="flex justify-center items-center">
+    <header className="font-sans text-2xl">
+      <div className="bg-white border-b-2 border-gray-300 shadow-sm flex justify-center items-center fixed top-0 left-0 right-0">
         <nav className="h-20 w-11/12 flex justify-between items-center">
           <div className="p-3 font-semibold tracking-wider">
             <NavLink className="p-4" to="/" exact>

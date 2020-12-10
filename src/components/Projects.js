@@ -6,7 +6,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mt-20">
       <h1>Projects Page</h1>
     </div>
   );
