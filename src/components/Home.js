@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import image from "../img/bg.jpg";
 import html from "../Icon/html.png";
 import css from "../Icon/css.png";
@@ -14,6 +16,12 @@ import Twitter from "../Icon/Twitter.png";
 
 const Home = () => {
   useEffect(() => {
+    AOS.init({
+      duration: 150,
+      delay: 700,
+      once: true,
+      easing: "ease",
+    });
     document.title = "Thamizh's Portfolio";
   });
 
@@ -30,7 +38,7 @@ const Home = () => {
           </h1>
           <div className="flex">
             <div>
-              <h1 className="mt-14 font-semibold text-3xl break-words">
+              <h1 className="mt-20 font-semibold text-3xl break-words">
                 <span className="text-blue-800 font-bold">
                   Front-end Web Developer
                 </span>{" "}
@@ -41,14 +49,15 @@ const Home = () => {
               </q>
               <a
                 href="/projects"
-                className="inline-block ml-10 mt-14 text-center border-2 border-blue-800 p-5 rounded-full focus:outline-none hover:bg-blue-800 hover:text-white transition-all ease-in delay-75"
+                className="inline-block ml-10 mt-14 text-center border-2 bg-blue-800  p-5 rounded-full focus:outline-none 
+                text-white hover:bg-white hover:border-blue-800 hover:text-blue-800 transition-all ease-in delay-75"
               >
                 <button className="text-lg uppercase font-semibold focus:outline-none">
                   Check my work
                 </button>
               </a>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <img
                 className="max-w-md mt-6"
                 src={image}
@@ -80,6 +89,7 @@ const Home = () => {
               alt="tailwind logo"
               className="mr-14 h-20 mt-10"
             />
+
             <img
               src={react}
               alt="react logo"
@@ -97,7 +107,7 @@ const Home = () => {
             Web design tool:
           </h1>
           <div className="mt-8">
-            <img src={figma} alt="figma logo" className="w-32 h-32 ml-9" />
+            <img src={figma} alt="figma logo" className="w-40 h-40 ml-9" />
           </div>
         </section>
       </main>
