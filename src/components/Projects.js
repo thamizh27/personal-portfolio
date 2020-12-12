@@ -29,7 +29,7 @@ const Projects = () => {
             <p className="mt-5 font-semibold underline">
               Tools used for this Project:
             </p>
-            <ul className="">
+            <ul>
               <li className="ml-4 mt-5">&#9733; React.js</li>
               <ul>
                 <li className="ml-10">Hooks</li>
@@ -67,7 +67,7 @@ const Projects = () => {
             <p className="mt-5 font-semibold underline">
               Tools used for this Project:
             </p>
-            <ul className="">
+            <ul>
               <li className="ml-4 mt-5">&#9733; HTML</li>
               <li className="ml-4 mt-5">&#9733; CSS</li>
               <li className="ml-4 mt-5">&#9733; Vanilla JavaScript</li>
