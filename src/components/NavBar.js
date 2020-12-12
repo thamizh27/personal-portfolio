@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NavBar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 200,
+      delay: 1000,
+      once: true,
+      easing: "ease",
+    });
+  });
+
   return (
     <header className="font-sans text-2xl">
-      <div className="bg-white border-b-2 border-gray-300 shadow-sm flex justify-center items-center fixed top-0 left-0 right-0">
+      <div className="bg-white z-10 border-b-2 border-gray-300 shadow-sm flex justify-center items-center fixed top-0 left-0 right-0">
         <nav className="h-20 w-11/12 flex justify-between items-center">
-          <div className="p-3 font-semibold tracking-wider">
+          <div className="p-3 font-semibold tracking-wider" data-aos="zoom-in">
             <NavLink className="p-4" to="/" exact>
               <span className="text-blue-800">&lt;</span>
               Thamizh
