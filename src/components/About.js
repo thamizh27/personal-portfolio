@@ -20,11 +20,11 @@ const About = () => {
         <img
           src={memoji}
           alt="memoji"
-          className="w-60 mx-auto relative top-12 rounded-full"
+          className="w-44 sm:w-52 md:w-60 mx-auto relative top-12 rounded-full"
           data-aos="fade-down"
         />
       </div>
-      <div className="text-xl w-5/12 m-auto text-center mt-24 leading-8">
+      <div className="text-base sm:text-xl w-10/12 sm:w-7/12 lg:w-5/12 m-auto text-center mt-24 leading-8">
         <p>
           I'm a self-taught Front End Developer based in
           <span className="font-semibold text-blue-800">
@@ -37,12 +37,12 @@ const About = () => {
           development. I easily bored often. but, development is one of the
           things I don't bored. I'm a developer who focuses on writing clean,
           elegent and efficient code.{" "}
-          <q className="text-base block text-gray-600">
+          <q className="text-sm sm:text-base block text-gray-600 mt-8">
             Anyone can write code. but, not everyone can write clean code.
           </q>
         </p>
       </div>
-      <div className="mt-20 border-t-2 border-gray-50 text-center text-2xl">
+      <div className="mt-20 border-t-2 border-gray-50 text-center text-base md:text-2xl">
         <p className="p-5">&copy; Copyright Thamizh 2020</p>
       </div>
     </div>
