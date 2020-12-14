@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const NavBar = () => {
+  // const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 200,
@@ -14,10 +16,13 @@ const NavBar = () => {
   });
 
   return (
-    <header className="font-sans text-2xl">
-      <div className="bg-white z-10 border-b-2 border-gray-300 shadow-sm flex justify-center items-center fixed top-0 left-0 right-0">
-        <nav className="h-20 w-11/12 flex justify-between items-center">
-          <div className="p-3 font-semibold tracking-wider" data-aos="zoom-in">
+    <div>
+      <div className="font-sans text-lg lg:text-2xl bg-white z-10 border-b-2 border-gray-300 shadow-sm fixed top-0 left-0 right-0">
+        <nav className="m-auto h-20 w-full md:w-11/12  flex justify-between items-center">
+          <div
+            className="font-semibold tracking-wider relative"
+            data-aos="zoom-in"
+          >
             <NavLink className="p-4" to="/" exact>
               <span className="text-blue-800">&lt;</span>
               Thamizh
@@ -25,24 +30,24 @@ const NavBar = () => {
               <span className="text-blue-800">&gt;</span>
             </NavLink>
           </div>
-          <div className="w-2/6 flex justify-between">
+          <div className="text-base md:text-lg lg:text-2xl flex right-8">
             <NavLink
               activeClassName="text-white bg-blue-800 rounded-full"
-              className="mr-4 px-4 py-2"
+              className="px-2 py-1 md:mr-4 md:px-4 md:py-2 block"
               to="/projects"
             >
               Projects
             </NavLink>
             <NavLink
               activeClassName="text-white bg-blue-800 rounded-full"
-              className="mr-4 px-4 py-2"
+              className=" px-2 py-1 md:mr-4 md:px-4 md:py-2 block"
               to="/about"
             >
               About
             </NavLink>
             <NavLink
               activeClassName="text-white bg-blue-800 rounded-full"
-              className="mr-4 px-4 py-2"
+              className="mr-1 px-2 py-1 md:mr-4 md:px-4 md:py-2 block"
               to="contact"
             >
               Contact
@@ -50,7 +55,7 @@ const NavBar = () => {
           </div>
         </nav>
       </div>
-    </header>
+    </div>
   );
 };
 
