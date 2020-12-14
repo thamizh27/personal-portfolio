@@ -39,6 +39,7 @@ const Home = () => {
           <div className="flex">
             <div>
               <h1 className="mt-20 font-semibold text-3xl break-words">
+                Self-taught{" "}
                 <span className="text-blue-800 font-bold">
                   Front-end Web Developer
                 </span>{" "}
