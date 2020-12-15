@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import image from "../img/bg.jpg";
@@ -48,15 +49,14 @@ const Home = () => {
               <q className="mt-8 block text-lg md:text-xl">
                 I want to make things that make people's lives better
               </q>
-              <a
-                href="/projects"
-                className="inline-block ml-10 mt-14 text-center border-2 bg-blue-800 p-3 md:p-5  rounded-full focus:outline-none 
+              <NavLink to="/projects">
+                <button
+                  className="text-sm md:text-lg uppercase font-semibold focus:outline-none ml-10 mt-14 text-center border-2 bg-blue-800 p-3 md:p-5  rounded-full outline-none  
                 text-white hover:bg-white hover:border-blue-800 hover:text-blue-800 transition-all ease-in duration-150"
-              >
-                <button className="text-sm md:text-lg uppercase font-semibold focus:outline-none">
+                >
                   Check my work
                 </button>
-              </a>
+              </NavLink>
             </div>
             <div data-aos="fade-left">
               <img
