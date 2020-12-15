@@ -12,7 +12,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="mt-20 w-9/12 md:w-11/12 xl:w-4/5 mx-auto grid grid-cols-1 gap-16">
+    <div className="mt-20 w-11/12 xl:w-4/5 mx-auto grid grid-cols-1 gap-16">
       {/* card - 1 */}
       <h1 className="text-3xl lg:text-4xl mt-8 font-semibold uppercase text-center">
         Projects
@@ -38,9 +38,9 @@ const Projects = () => {
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; Tailwind css
               </li>
-              <ul>
-                <li className="ml-10">Utility classes</li>
-              </ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; AOS - Animation on scroll
               </li>
@@ -78,6 +78,9 @@ const Projects = () => {
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; CSS</li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; Vanilla JavaScript
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
               </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
@@ -118,9 +121,14 @@ const Projects = () => {
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
               Tools used for this Project:
             </p>
-            <p className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-              &#9733; Tailwind Starter Kit
-            </p>
+            <ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Tailwind Starter Kit
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
+            </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
                 <a
@@ -166,6 +174,9 @@ const Projects = () => {
                 <li className="ml-10">Axios - Ajax library</li>
               </ul>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Vannila css</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
@@ -214,9 +225,9 @@ const Projects = () => {
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; Tailwind css
               </li>
-              <ul>
-                <li className="ml-10">Utility classes</li>
-              </ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
@@ -263,6 +274,9 @@ const Projects = () => {
                 &#9733; Vanilla JavaScript
               </li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Rellax.js</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>

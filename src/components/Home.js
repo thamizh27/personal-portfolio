@@ -38,7 +38,7 @@ const Home = () => {
           </h1>
           <div className="flex">
             <div>
-              <h1 className="mt-20 font-semibold text-3xl break-words">
+              <h1 className="mt-20 font-semibold text-3xl">
                 Self-taught{" "}
                 <span className="text-blue-800 font-bold">
                   Front-end Web Developer
@@ -51,7 +51,7 @@ const Home = () => {
               <a
                 href="/projects"
                 className="inline-block ml-10 mt-14 text-center border-2 bg-blue-800 p-3 md:p-5  rounded-full focus:outline-none 
-                text-white hover:bg-white hover:border-blue-800 hover:text-blue-800 transition-all ease-in delay-75"
+                text-white hover:bg-white hover:border-blue-800 hover:text-blue-800 transition-all ease-in duration-150"
               >
                 <button className="text-sm md:text-lg uppercase font-semibold focus:outline-none">
                   Check my work
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
             <div data-aos="fade-left">
               <img
-                className="max-w-xs lg:max-w-md mt-6 hidden md:block"
+                className="max-w-xs lg:max-w-md mt-6 ml-6 hidden md:block"
                 src={image}
                 alt="web Development"
               />
@@ -112,16 +112,16 @@ const Home = () => {
           <h1 className="mt-12 font-semibold underline text-lg md:text-3xl">
             Version control:
           </h1>
-          <div className="mt-16 flex justify-evenly">
+          <div className="mt-16 flex justify-evenly items-center">
             <img
               src={git}
               alt="git logo"
-              className="w-20 h-20 md:w-32 md:h-32 mdmr-20 md:ml-9"
+              className="w-20 h-20 md:w-32 md:h-32"
             />
             <img
               src={github}
               alt="github logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-20"
+              className="w-20 h-20 md:w-32 md:h-32"
             />
           </div>
           <h1 className="mt-16 capitalize font-semibold underline text-lg md:text-3xl">

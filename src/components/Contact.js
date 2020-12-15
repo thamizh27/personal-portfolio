@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact - Thamizh's Portfolio";
+  }, []);
+
   return (
     <div className="mt-20">
       <div className="text-center w-11/12 sm:w-1/2 h-full m-auto flex justify-center items-center flex-col">
@@ -21,28 +25,19 @@ const Contact = () => {
           </button>
         </a>
         <div className="mt-14 w-10/12 flex justify-evenly">
-          <a
-            href="https://www.instagram.com/thamizh_27__/"
-            rel="noreferrer"
-            className=""
-          >
+          <a href="https://www.instagram.com/thamizh_27__/" rel="noreferrer">
             <i className="fab fa-instagram text-3xl sm:text-5xl"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/thamizharasandevaraj/"
-            className=""
             rel="noreferrer"
           >
             <i className="fab fa-linkedin text-3xl sm:text-5xl"></i>
           </a>
-          <a
-            href="https://twitter.com/thamizh_27_"
-            className=""
-            rel="noreferrer"
-          >
+          <a href="https://twitter.com/thamizh_27_" rel="noreferrer">
             <i className="fab fa-twitter text-3xl sm:text-5xl"></i>
           </a>
-          <a href="https://github.com/thamizh27" className="" rel="noreferrer">
+          <a href="https://github.com/thamizh27" rel="noreferrer">
             <i className="fab fa-github text-3xl sm:text-5xl"></i>
           </a>
         </div>

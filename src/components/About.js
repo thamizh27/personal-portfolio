@@ -12,7 +12,7 @@ const About = () => {
       easing: "ease",
     });
     document.title = "About - Thamizh's Portfolio";
-  });
+  }, []);
 
   return (
     <div className="mt-20">
