@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaBars } from "react-icons/fa";
 
 const NavBar = ({ toggle }) => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const NavBar = ({ toggle }) => {
             </NavLink>
           </div>
           <div className="lg:hidden mr-4 cursor-pointer" onClick={toggle}>
-            <i className="fas fa-bars text-3xl"></i>
+            <FaBars className="text-3xl" />
           </div>
           <div className="hidden lg:flex right-8">
             <NavLink
