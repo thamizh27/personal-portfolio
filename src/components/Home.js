@@ -2,18 +2,18 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import image from "../img/bg.jpg";
-import html from "../Icon/html.png";
-import css from "../Icon/css.png";
-import sass from "../Icon/sass.png";
-import bootstrap from "../Icon/Bootstrap.png";
-import tailwind from "../Icon/tailwind.png";
-import react from "../Icon/React.png";
-import git from "../Icon/git.png";
-import github from "../Icon/github.png";
-import figma from "../Icon/Figma.png";
-import LinkedIn from "../Icon/LinkedIn.png";
-import Twitter from "../Icon/Twitter.png";
+import image from "../img/bg.webp";
+import html from "../Icon/html.webp";
+import css from "../Icon/css.webp";
+import sass from "../Icon/sass.webp";
+import bootstrap from "../Icon/Bootstrap.webp";
+import tailwind from "../Icon/tailwind.webp";
+import react from "../Icon/React.webp";
+import git from "../Icon/git.webp";
+import github from "../Icon/github.webp";
+import figma from "../Icon/Figma.webp";
+import LinkedIn from "../Icon/LinkedIn.webp";
+import Twitter from "../Icon/Twitter.webp";
 
 const Home = () => {
   useEffect(() => {

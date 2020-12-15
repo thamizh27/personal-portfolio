@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import memoji from "../img/memoji.PNG";
+import memoji from "../img/memoji.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

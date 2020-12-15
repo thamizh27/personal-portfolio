@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import portfolio from "../img/portfolio.png";
-import breakingBad from "../img/breakingbad.png";
-import destiny from "../img/destiny.png";
-import netflix from "../img/netflix.png";
-import gallery from "../img/gallery.png";
-import parallax from "../img/parallax.png";
+import portfolio from "../img/portfolio.webp";
+import breakingBad from "../img/breakingbad.webp";
+import destiny from "../img/destiny.webp";
+import netflix from "../img/netflix.webp";
+import gallery from "../img/gallery.webp";
+import parallax from "../img/parallax.webp";
 
 const Projects = () => {
   useEffect(() => {
