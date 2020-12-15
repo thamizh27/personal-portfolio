@@ -1,4 +1,11 @@
 import React, { useEffect } from "react";
+import {
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+} from "react-icons/fa";
 
 const Contact = () => {
   useEffect(() => {
@@ -21,24 +28,25 @@ const Contact = () => {
           className="text-md sm:text-lg border-2 border-blue-800 p-2 sm:p-4 text-center my-10 rounded-md hover:bg-blue-800 hover:text-white"
         >
           <button className="font-semibold focus:outline-none">
-            <i className="far fa-paper-plane mr-3"></i> Get In Touch
+            <FaEnvelope className="mr-3 inline-block" />
+            Get In Touch
           </button>
         </a>
         <div className="mt-14 w-10/12 flex justify-evenly">
           <a href="https://www.instagram.com/thamizh_27__/" rel="noreferrer">
-            <i className="fab fa-instagram text-3xl sm:text-5xl"></i>
+            <FaInstagram className="text-3xl sm:text-5xl" />
           </a>
           <a
             href="https://www.linkedin.com/in/thamizharasandevaraj/"
             rel="noreferrer"
           >
-            <i className="fab fa-linkedin text-3xl sm:text-5xl"></i>
+            <FaLinkedin className="text-3xl sm:text-5xl" />
           </a>
           <a href="https://twitter.com/thamizh_27_" rel="noreferrer">
-            <i className="fab fa-twitter text-3xl sm:text-5xl"></i>
+            <FaTwitter className="text-3xl sm:text-5xl" />
           </a>
           <a href="https://github.com/thamizh27" rel="noreferrer">
-            <i className="fab fa-github text-3xl sm:text-5xl"></i>
+            <FaGithub className="text-3xl sm:text-5xl" />
           </a>
         </div>
       </div>
