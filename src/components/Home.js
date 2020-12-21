@@ -70,10 +70,10 @@ const Home = () => {
 
         {/* Tool section */}
         <section className="mt-12">
-          <h1 className="text-xl md:text-4xl capitalize underline">
+          <h1 className="text-xl md:text-4xl capitalize">
             Technologies and tools i know:
           </h1>
-          <h1 className="mt-12 font-semibold underline text-lg md:text-3xl">
+          <h1 className="mt-12 font-semibold text-lg md:text-3xl">
             Development:
           </h1>
           <div className="mt-8 inline-flex md:flex items-center justify-between flex-wrap">
@@ -109,7 +109,7 @@ const Home = () => {
               className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
             />
           </div>
-          <h1 className="mt-12 font-semibold underline text-lg md:text-3xl">
+          <h1 className="mt-12 font-semibold text-lg md:text-3xl">
             Version control:
           </h1>
           <div className="mt-16 flex justify-evenly items-center">
@@ -124,7 +124,7 @@ const Home = () => {
               className="w-20 h-20 md:w-32 md:h-32"
             />
           </div>
-          <h1 className="mt-16 capitalize font-semibold underline text-lg md:text-3xl">
+          <h1 className="mt-16 capitalize font-semibold text-lg md:text-3xl">
             Web design tool:
           </h1>
           <div className="mt-8">
@@ -138,7 +138,7 @@ const Home = () => {
       </main>
       <footer className="mt-32">
         <div className="w-full h-60 border-2 border-gray-100">
-          <p className="text-xl md:text-4xl underline text-center mt-8 font-semibold">
+          <p className="text-xl md:text-4xl text-center mt-8 font-semibold">
             connect with me
           </p>
           <div className="mt-14 flex justify-evenly md:justify-center items-center">
@@ -178,7 +178,7 @@ const Home = () => {
           </div>
         </div>
       </footer>
-      <div className="mt-20 border-t-2 border-gray-50 text-center text-base md:text-2xl">
+      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-2xl">
         <p className="p-5">&copy; Copyright Thamizh 2020</p>
       </div>
     </div>

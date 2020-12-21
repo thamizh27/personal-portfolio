@@ -26,7 +26,7 @@ const About = () => {
       </div>
       <div className="text-base sm:text-xl w-10/12 sm:w-7/12 lg:w-5/12 m-auto text-center mt-24 leading-8">
         <p>
-          I'm a self-taught Front End Developer based in
+          I'm a self-taught Front-end Developer based in
           <span className="font-semibold text-blue-800">
             {" "}
             Tamilnadu, India.
@@ -42,7 +42,7 @@ const About = () => {
           </q>
         </p>
       </div>
-      <div className="mt-20 border-t-2 border-gray-50 text-center text-base md:text-2xl">
+      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-2xl">
         <p className="p-5">&copy; Copyright Thamizh 2020</p>
       </div>
     </div>

@@ -304,7 +304,7 @@ const Projects = () => {
         </div>
       </section>
       <footer>
-        <div className="mt-10 md:mt-20 border-t-2 border-gray-50 text-center text-sm md:text-xl lg:text-2xl">
+        <div className="mt-10 text-gray-600 md:mt-20 border-t-2 border-gray-50 text-center text-sm md:text-xl lg:text-2xl">
           <p className="p-5">&copy; Copyright Thamizh 2020</p>
         </div>
       </footer>
