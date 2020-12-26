@@ -10,10 +10,7 @@ const SideBar = ({ toggle, open }) => {
       } ${open ? "opacity-100" : "opacity-0"}`}
     >
       <div onClick={toggle}>
-        <FaTimes
-          size="3em"
-          className="absolute right-12 top-10 cursor-pointer"
-        />
+        <FaTimes className="text-3xl absolute right-12 top-10 cursor-pointer" />
       </div>
       <div className="text-3xl h-full flex flex-col justify-center items-center">
         <NavLink
