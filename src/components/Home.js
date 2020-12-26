@@ -42,7 +42,7 @@ const Home = () => {
               <h1 className="mt-20 font-semibold text-3xl">
                 Self-taught{" "}
                 <span className="text-blue-800 font-bold">
-                  Front-end Web Developer
+                  Front-end Developer
                 </span>{" "}
                 focused on modern minimalistic and user-friendly experiences.
               </h1>
