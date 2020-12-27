@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import image from "../img/bg.webp";
-import html from "../Icon/html.webp";
-import css from "../Icon/css.webp";
+import image from "../img/developer.svg";
+import node from "../Icon/Node.webp";
+import express from "../Icon/express.svg";
+import webpack from "../Icon/webpack.svg";
 import sass from "../Icon/sass.webp";
 import bootstrap from "../Icon/Bootstrap.webp";
 import tailwind from "../Icon/tailwind.webp";
@@ -37,7 +38,7 @@ const Home = () => {
               Thamizharasan Devaraj.
             </span>
           </h1>
-          <div className="flex">
+          <div className="flex justify-between">
             <div>
               <h1 className="mt-20 font-semibold text-3xl">
                 Self-taught{" "}
@@ -58,9 +59,9 @@ const Home = () => {
                 </button>
               </NavLink>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" className="ml-8">
               <img
-                className="max-w-xs lg:max-w-md mt-6 ml-6 hidden md:block"
+                className="max-w-sm lg:max-w-md mt-32 pl-10 hidden md:block"
                 src={image}
                 alt="web Development"
               />
@@ -74,19 +75,9 @@ const Home = () => {
             Technologies and tools i know:
           </h1>
           <h1 className="mt-12 font-semibold text-lg md:text-3xl">
-            Development:
+            Front-end:
           </h1>
           <div className="mt-8 inline-flex md:flex items-center justify-between flex-wrap">
-            <img
-              src={html}
-              alt="html logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
-            <img
-              src={css}
-              alt="css logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
             <img
               src={sass}
               alt="sass logo"
@@ -102,14 +93,31 @@ const Home = () => {
               alt="tailwind logo"
               className="w-20 h-14 md:w-32 md:h-20 md:mr-14 md:mt-10"
             />
-
             <img
               src={react}
               alt="react logo"
               className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
             />
+            <img
+              src={webpack}
+              alt="webpack logo"
+              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
+            />
           </div>
-          <h1 className="mt-12 font-semibold text-lg md:text-3xl">
+          <h1 className="mt-20 font-semibold text-lg md:text-3xl">Back-end:</h1>
+          <div className="mt-8 flex items-center justify-evenly">
+            <img
+              src={node}
+              alt="node logo"
+              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
+            />
+            <img
+              src={express}
+              alt="express logo"
+              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
+            />
+          </div>
+          <h1 className="mt-20 font-semibold text-lg md:text-3xl">
             Version control:
           </h1>
           <div className="mt-16 flex justify-evenly items-center">
@@ -124,7 +132,7 @@ const Home = () => {
               className="w-20 h-20 md:w-32 md:h-32"
             />
           </div>
-          <h1 className="mt-16 capitalize font-semibold text-lg md:text-3xl">
+          <h1 className="mt-20 capitalize font-semibold text-lg md:text-3xl">
             Web design tool:
           </h1>
           <div className="mt-8">
