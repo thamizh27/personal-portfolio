@@ -14,6 +14,7 @@ const Contact = () => {
 
   return (
     <div className="mt-20">
+      {/* form section */}
       <div className="mt-36 border border-gray-300 rounded-xl lg:w-5/12 m-auto">
         <form data-netlify="true">
           <h1 className="m-auto w-4/5 mt-10 text-3xl text-blue-800 font-semibold">
@@ -64,6 +65,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      {/* Details Section */}
       <div className="mt-10 text-center w-11/12 sm:w-1/2 h-full m-auto flex justify-center items-center flex-col">
         <h1 className="text-2xl sm:text-3xl mt-20">
           OK, LET’S CREATE SOMETHING GREAT.
