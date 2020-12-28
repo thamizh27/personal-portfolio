@@ -16,10 +16,11 @@ const Contact = () => {
     <div className="mt-20">
       {/* form section */}
       <div className="mt-36 border border-gray-300 rounded-xl lg:w-5/12 m-auto">
-        <form data-netlify="true">
+        <form name="contact" method="post" action="/contact">
           <h1 className="m-auto w-4/5 mt-10 text-3xl text-blue-800 font-semibold">
             I'd love to hear from you
           </h1>
+          <input type="hidden" name="form-name" vlaue="contact" />
           <div className="mt-10 w-4/5 m-auto flex justify-between items-center">
             <label htmlFor="name" className="text-lg">
               Name:
@@ -53,7 +54,7 @@ const Contact = () => {
               placeholder="Type here..."
               name="message"
               className="border border-gray-300 w-4/5 h-24 p-2 rounded-md text-lg focus:outline-none"
-            />
+            ></textarea>
           </div>
           <div className="text-center">
             <button
