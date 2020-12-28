@@ -15,12 +15,12 @@ const Contact = () => {
   return (
     <div className="mt-20">
       {/* form section */}
-      <div className="mt-36 border border-gray-300 rounded-xl lg:w-5/12 m-auto">
-        <form name="contact" method="post" action="/contact">
+      <div className="mt-36 border border-gray-300 rounded-xl w-10/12 lg:w-5/12 m-auto">
+        <form name="contact" method="post" action="/">
           <h1 className="m-auto w-4/5 mt-10 text-3xl text-blue-800 font-semibold">
             I'd love to hear from you
           </h1>
-          <input type="hidden" name="form-name" value="contact" />{" "}
+          <input type="hidden" name="form-name" value="contact" />
           <div className="mt-10 w-4/5 m-auto flex justify-between items-center">
             <label htmlFor="name" className="text-lg">
               Name:
