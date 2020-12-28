@@ -14,7 +14,57 @@ const Contact = () => {
 
   return (
     <div className="mt-20">
-      <div className="text-center w-11/12 sm:w-1/2 h-full m-auto flex justify-center items-center flex-col">
+      <div className="mt-36 border border-gray-300 rounded-xl lg:w-5/12 m-auto">
+        <form data-netlify="true">
+          <h1 className="m-auto w-4/5 mt-10 text-3xl text-blue-800 font-semibold">
+            I'd love to hear from you
+          </h1>
+          <div className="mt-10 w-4/5 m-auto flex justify-between items-center">
+            <label htmlFor="name" className="text-lg">
+              Name:
+            </label>
+            <input
+              required
+              autoFocus
+              placeholder="John Doe"
+              type="text"
+              name="name"
+              className="border border-gray-300 w-4/5 p-2 rounded-md text-lg focus:outline-none"
+            />
+          </div>
+          <div className="mt-10 w-4/5 m-auto flex justify-between items-center">
+            <label htmlFor="email" className="text-lg">
+              Email:
+            </label>
+            <input
+              required
+              placeholder="example@gmial.com"
+              type="email"
+              name="email"
+              className="border border-gray-300 w-4/5 p-2 rounded-md text-lg focus:outline-none"
+            />
+          </div>
+          <div className="mt-10 w-4/5 m-auto flex justify-between">
+            <label htmlFor="message" className="text-lg">
+              Message:
+            </label>
+            <textarea
+              placeholder="Type here..."
+              name="message"
+              className="border border-gray-300 w-4/5 h-24 p-2 rounded-md text-lg focus:outline-none"
+            />
+          </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="text-md sm:text-lg border-2 border-blue-800 px-4 py-2 text-center my-10 rounded-md hover:bg-blue-800 hover:text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="mt-10 text-center w-11/12 sm:w-1/2 h-full m-auto flex justify-center items-center flex-col">
         <h1 className="text-2xl sm:text-3xl mt-20">
           OK, LET’S CREATE SOMETHING GREAT.
         </h1>
@@ -50,6 +100,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
+
       <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-2xl">
         <p className="p-5">&copy; Copyright Thamizh 2020</p>
       </div>
