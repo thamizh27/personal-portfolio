@@ -144,6 +144,7 @@ const Home = () => {
           </div>
         </section>
       </main>
+      {/* footer section */}
       <footer className="mt-32">
         <div className="w-full h-60 border-2 border-gray-100">
           <p className="text-xl md:text-4xl text-center mt-8 font-semibold">
