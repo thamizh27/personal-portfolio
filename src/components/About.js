@@ -42,8 +42,8 @@ const About = () => {
           </q>
         </p>
       </div>
-      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-2xl">
-        <p className="p-5">&copy; Copyright Thamizh 2020</p>
+      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-xl">
+        <p className="p-5">&copy; Copyright Thamizh 2021</p>
       </div>
     </div>
   );
