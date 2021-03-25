@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+import Footer from "./Footer";
 
 const Contact = () => {
   useEffect(() => {
@@ -103,10 +104,9 @@ const Contact = () => {
           </a>
         </div>
       </div>
-
-      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-xl">
-        <p className="p-5">&copy; Copyright Thamizh 2021</p>
-      </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

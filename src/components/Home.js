@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import image from "../img/developer.svg";
 import node from "../Icon/Node.webp";
 import express from "../Icon/express.svg";
+import mongo from "../Icon/mongodb (1).png";
 import webpack from "../Icon/webpack.svg";
 import sass from "../Icon/sass.webp";
 import bootstrap from "../Icon/Bootstrap.webp";
@@ -15,6 +16,7 @@ import github from "../Icon/github.webp";
 import figma from "../Icon/Figma.webp";
 import LinkedIn from "../Icon/LinkedIn.webp";
 import Twitter from "../Icon/Twitter.webp";
+import Footer from "./Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -116,6 +118,11 @@ const Home = () => {
               alt="express logo"
               className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
             />
+            <img
+              src={mongo}
+              alt="mongo logo"
+              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
+            />
           </div>
           <h1 className="mt-20 font-semibold text-lg md:text-3xl">
             Version control:
@@ -186,10 +193,8 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <Footer />
       </footer>
-      <div className="mt-20 text-gray-600 border-t-2 border-gray-50 text-center text-base md:text-xl">
-        <p className="p-5">&copy; Copyright Thamizh 2021</p>
-      </div>
     </div>
   );
 };

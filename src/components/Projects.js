@@ -5,6 +5,7 @@ import destiny from "../img/destiny.webp";
 import netflix from "../img/netflix.webp";
 import gallery from "../img/gallery.webp";
 import parallax from "../img/parallax.webp";
+import Footer from "./Footer";
 
 const Projects = () => {
   useEffect(() => {
@@ -304,9 +305,7 @@ const Projects = () => {
         </div>
       </section>
       <footer>
-        <div className="mt-10 text-gray-600 md:mt-20 border-t-2 border-gray-50 text-center text-base md:text-xl">
-          <p className="p-5">&copy; Copyright Thamizh 2021</p>
-        </div>
+        <Footer />
       </footer>
     </div>
   );
