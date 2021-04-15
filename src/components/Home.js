@@ -16,6 +16,7 @@ import github from "../Icon/github.webp";
 import figma from "../Icon/Figma.webp";
 import LinkedIn from "../Icon/LinkedIn.webp";
 import Twitter from "../Icon/Twitter.webp";
+import firebase from "../Icon/firebase.webp";
 import Footer from "./Footer";
 
 const Home = () => {
@@ -122,6 +123,11 @@ const Home = () => {
               src={mongo}
               alt="mongo logo"
               className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
+            />
+            <img
+              src={firebase}
+              alt="firebase logo"
+              className="w-20 h-20 md:w-40 md:h-30 md:mr-14 md:mt-10"
             />
           </div>
           <h1 className="mt-20 font-semibold text-lg md:text-3xl">
