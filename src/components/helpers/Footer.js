@@ -1,5 +1,5 @@
 import React from "react";
-import Date from "./helpers/Date";
+import Date from "./Date";
 
 const Footer = () => {
   return (

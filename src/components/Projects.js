@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
+
+// helper Component
+import Footer from "../components/helpers/Footer";
+import ProjectImage from "../components/helpers/ImageHelpers/ProjectImage";
+
+//Image Components
 import portfolio from "../img/portfolio.webp";
 import breakingBad from "../img/breakingbad.webp";
 import destiny from "../img/destiny.webp";
 import netflix from "../img/netflix.webp";
 import gallery from "../img/gallery.webp";
 import parallax from "../img/parallax.webp";
-import Footer from "./Footer";
+import ProjectLink from "./helpers/ProjectLink";
 
 const Projects = () => {
   useEffect(() => {
@@ -20,11 +26,7 @@ const Projects = () => {
       </h1>
       <section className="w-full h-full m-auto  border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={portfolio}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={portfolio} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">Personal Portfolio</p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
@@ -47,14 +49,10 @@ const Projects = () => {
               </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/thamizh27/personal-portfolio.git"
-                className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-              >
-                Source code
-              </a>
+              <ProjectLink
+                heading={"Source Code"}
+                link={"https://github.com/thamizh27/personal-portfolio.git"}
+              />
             </div>
           </div>
         </div>
@@ -62,11 +60,7 @@ const Projects = () => {
       {/* card - 2 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={netflix}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={netflix} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">
               Netflix Landing Page Clone
@@ -86,24 +80,16 @@ const Projects = () => {
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/thamizh27/netflix-landing-page.git"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-                >
-                  Source Code
-                </a>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/netflix-landing-page.git"}
+                />
               </div>
               <div className="mt-2 lg:mt-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://thamizh27.github.io/netflix-landing-page/"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800"
-                >
-                  Live
-                </a>
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/netflix-landing-page/"}
+                />
               </div>
             </div>
           </div>
@@ -112,11 +98,7 @@ const Projects = () => {
       {/* card - 3 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={destiny}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={destiny} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">Gym Landing Page</p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
@@ -132,24 +114,16 @@ const Projects = () => {
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/thamizh27/destiny-lan-page.git"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-                >
-                  Source Code
-                </a>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/destiny-lan-page.git"}
+                />
               </div>
               <div className="mt-2 lg:mt-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://thamizh27.github.io/destiny-lan-page/"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800"
-                >
-                  Live
-                </a>
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/destiny-lan-page/"}
+                />
               </div>
             </div>
           </div>
@@ -158,11 +132,7 @@ const Projects = () => {
       {/* card - 4 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={breakingBad}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={breakingBad} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">Breaking Bad App</p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
@@ -181,24 +151,16 @@ const Projects = () => {
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/thamizh27/breakingbad.git"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-                >
-                  Source Code
-                </a>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/breakingbad.git"}
+                />
               </div>
               <div className="mt-2 lg:mt-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://thamizh27.github.io/breakingbad/"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800"
-                >
-                  Live
-                </a>
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/breakingbad/"}
+                />
               </div>
             </div>
           </div>
@@ -207,11 +169,7 @@ const Projects = () => {
       {/* card - 5 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={gallery}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={gallery} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">Pixabay Gallery</p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
@@ -232,24 +190,16 @@ const Projects = () => {
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/thamizh27/image-gallery.git"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-                >
-                  Source Code
-                </a>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/image-gallery.git"}
+                />
               </div>
               <div className="mt-2 lg:mt-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://thamizh27.github.io/image-gallery/"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800"
-                >
-                  Live
-                </a>
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/image-gallery/"}
+                />
               </div>
             </div>
           </div>
@@ -258,11 +208,7 @@ const Projects = () => {
       {/* card - 6 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <img
-            src={parallax}
-            alt="web screenshot"
-            className="max-h-48 lg:max-h-80 border border-gray-100 rounded-xl shadow-lg md:m-10 mx-auto my-10"
-          />
+          <ProjectImage image={parallax} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">
               Parallax Landing Page
@@ -281,24 +227,18 @@ const Projects = () => {
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/thamizh27/parallax-landing-page.git"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800 capitalize"
-                >
-                  Source Code
-                </a>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={
+                    "https://github.com/thamizh27/parallax-landing-page.git"
+                  }
+                />
               </div>
               <div className="mt-2 lg:mt-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://thamizh27.github.io/parallax-landing-page/"
-                  className="border-b-2 border-white text-lg lg:text-2xl hover:border-blue-800"
-                >
-                  Live
-                </a>
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/parallax-landing-page/"}
+                />
               </div>
             </div>
           </div>

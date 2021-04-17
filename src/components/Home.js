@@ -1,7 +1,17 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
+// Animation library
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// helper components
+import Footer from "../components/helpers/Footer";
+import Image from "./helpers/ImageHelpers/Image";
+import VersionControlImage from "./helpers/ImageHelpers/VersionControlImage";
+import SocialImage from "./helpers/ImageHelpers/SocialImage";
+
+// importing Images
 import image from "../img/developer.svg";
 import node from "../Icon/Node.webp";
 import express from "../Icon/express.svg";
@@ -17,7 +27,6 @@ import figma from "../Icon/Figma.webp";
 import LinkedIn from "../Icon/LinkedIn.webp";
 import Twitter from "../Icon/Twitter.webp";
 import firebase from "../Icon/firebase.webp";
-import Footer from "./Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -77,73 +86,40 @@ const Home = () => {
           <h1 className="text-xl md:text-4xl capitalize">
             Technologies and tools i know:
           </h1>
+          {/* front-end technologies */}
           <h1 className="mt-12 font-semibold text-lg md:text-3xl">
             Front-end:
           </h1>
           <div className="mt-8 inline-flex md:flex items-center justify-between flex-wrap">
-            <img
-              src={sass}
-              alt="sass logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
-            <img
-              src={bootstrap}
-              alt="bootstrap logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
+            <Image image={sass} />
+            <Image image={bootstrap} />
             <img
               src={tailwind}
               alt="tailwind logo"
               className="w-20 h-14 md:w-32 md:h-20 md:mr-14 md:mt-10"
             />
-            <img
-              src={react}
-              alt="react logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
-            <img
-              src={webpack}
-              alt="webpack logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
+            <Image image={react} />
+            <Image image={webpack} />
           </div>
+          {/* back-end technologies */}
           <h1 className="mt-20 font-semibold text-lg md:text-3xl">Back-end:</h1>
           <div className="mt-8 flex items-center justify-evenly">
-            <img
-              src={node}
-              alt="node logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
-            <img
-              src={express}
-              alt="express logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
-            <img
-              src={mongo}
-              alt="mongo logo"
-              className="w-20 h-20 md:w-32 md:h-32 md:mr-14 md:mt-10"
-            />
+            <Image image={node} />
+            <Image image={express} />
+            <Image image={mongo} />
             <img
               src={firebase}
               alt="firebase logo"
               className="w-20 h-20 md:w-40 md:h-30 md:mr-14 md:mt-10"
             />
           </div>
+          {/* version control tools */}
           <h1 className="mt-20 font-semibold text-lg md:text-3xl">
             Version control:
           </h1>
           <div className="mt-16 flex justify-evenly items-center">
-            <img
-              src={git}
-              alt="git logo"
-              className="w-20 h-20 md:w-32 md:h-32"
-            />
-            <img
-              src={github}
-              alt="github logo"
-              className="w-20 h-20 md:w-32 md:h-32"
-            />
+            <VersionControlImage image={git} />
+            <VersionControlImage image={github} />
           </div>
           <h1 className="mt-20 capitalize font-semibold text-lg md:text-3xl">
             Web design tool:
@@ -169,33 +145,21 @@ const Home = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <img
-                src={github}
-                alt="github"
-                className="w-10 h-10 md:w-16 md:h-16 md:mr-20"
-              />
+              <SocialImage image={github} />
             </a>
             <a
               href="https://www.linkedin.com/in/thamizharasandevaraj/"
               rel="noreferrer"
               target="_blank"
             >
-              <img
-                src={LinkedIn}
-                alt="linkedin"
-                className="w-10 h-10 md:w-16 md:h-16 md:mr-20"
-              />
+              <SocialImage image={LinkedIn} />
             </a>
             <a
               href="https://twitter.com/thamizh_27_"
               rel="noreferrer"
               target="_blank"
             >
-              <img
-                src={Twitter}
-                alt="Twitter"
-                className="w-10 h-10 md:w-16 md:h-16"
-              />
+              <SocialImage image={Twitter} />
             </a>
           </div>
         </div>

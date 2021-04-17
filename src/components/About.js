@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import memoji from "../img/memoji.webp";
+import thamizh from "../img/Thamizh.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "./Footer";
+import Footer from "../components/helpers/Footer";
 
 const About = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const About = () => {
     <div className="mt-20">
       <div>
         <img
-          src={memoji}
+          src={thamizh}
           alt="memoji"
           className="w-44 sm:w-52 md:w-60 mx-auto relative top-12 rounded-full"
           data-aos="fade-down"
