@@ -41,7 +41,7 @@ const Contact = () => {
             </label>
             <input
               required
-              placeholder="example@gmial.com"
+              placeholder="example@gmail.com"
               type="email"
               name="email"
               className="border border-gray-300 w-4/5 p-2 rounded-md text-lg focus:outline-none"

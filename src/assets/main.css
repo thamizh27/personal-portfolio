@@ -52,9 +52,16 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
 }
 
 /*
@@ -86,8 +93,13 @@ Add the correct font weight in Edge and Safari.
 */
 
 code {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
-    monospace; /* 1 */
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -133,8 +145,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button {
-  /* 1 */
+button { /* 1 */
   text-transform: none;
 }
 
@@ -143,8 +154,8 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type="button"],
-[type="submit"] {
+[type='button'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -206,6 +217,7 @@ Add the correct display in Chrome and Safari.
  * Removes the default spacing and border for appropriate elements.
  */
 
+
 h1,
 p {
   margin: 0;
@@ -225,6 +237,7 @@ button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
+
 
 ul {
   list-style: none;
@@ -362,9 +375,9 @@ textarea {
  * 'mono' font family.
  */
 
+
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -785,19 +798,16 @@ img {
 
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 * {
-  --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgba(59, 130, 246, 0.5);
@@ -927,8 +937,7 @@ img {
 }
 
 @keyframes ping {
-  75%,
-  100% {
+  75%, 100% {
     transform: scale(2);
     opacity: 0;
   }
@@ -936,24 +945,24 @@ img {
 
 @keyframes pulse {
   50% {
-    opacity: 0.5;
+    opacity: .5;
   }
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
     transform: none;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 @media (min-width: 640px) {
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -997,6 +1006,7 @@ img {
 }
 
 @media (min-width: 768px) {
+
   .md\:block {
     display: block;
   }
@@ -1105,6 +1115,7 @@ img {
 }
 
 @media (min-width: 1024px) {
+
   .lg\:flex {
     display: flex;
   }
@@ -1154,6 +1165,7 @@ img {
 }
 
 @media (min-width: 1280px) {
+
   .xl\:w-4\/5 {
     width: 80%;
   }

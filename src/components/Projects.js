@@ -5,12 +5,14 @@ import Footer from "../components/helpers/Footer";
 import ProjectImage from "../components/helpers/ImageHelpers/ProjectImage";
 
 //Image Components
-import portfolio from "../img/portfolio.webp";
+import portfolio from "../img/portfolio-hero.png";
 import breakingBad from "../img/breakingbad.webp";
 import destiny from "../img/destiny.webp";
 import netflix from "../img/netflix.webp";
 import gallery from "../img/gallery.webp";
-import parallax from "../img/parallax.webp";
+import firebase from "../img/firebase.png";
+import piroll from "../img/piroll.png";
+import astutex from "../img/demo-streaming.png";
 import ProjectLink from "./helpers/ProjectLink";
 
 const Projects = () => {
@@ -45,7 +47,7 @@ const Projects = () => {
                 &#9733; Mob Responsive
               </li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-                &#9733; AOS - Animation on scroll
+                &#9733; AOS - Animation On Scroll
               </li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
@@ -60,35 +62,30 @@ const Projects = () => {
       {/* card - 2 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <ProjectImage image={netflix} />
+          <ProjectImage image={firebase} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">
-              Netflix Landing Page Clone
+              Firebase CRUD Operation
             </p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
               Tools used for this Project:
             </p>
             <ul>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; HTML</li>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; CSS</li>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-                &#9733; Vanilla JavaScript
-              </li>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-                &#9733; Mob Responsive
-              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; React</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Material UI</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Firebase</li>
             </ul>
             <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
               <div>
                 <ProjectLink
                   heading={"Source Code"}
-                  link={"https://github.com/thamizh27/netflix-landing-page.git"}
+                  link={"https://github.com/thamizh27/firstoreapp"}
                 />
               </div>
               <div className="mt-2 lg:mt-4">
                 <ProjectLink
                   heading={"Live"}
-                  link={"https://thamizh27.github.io/netflix-landing-page/"}
+                  link={"https://react-firestore-app.netlify.app/"}
                 />
               </div>
             </div>
@@ -96,40 +93,6 @@ const Projects = () => {
         </div>
       </section>
       {/* card - 3 */}
-      <section className="w-full h-full m-auto border-2 border-gray-100">
-        <div className="md:flex items-center justify-evenly">
-          <ProjectImage image={destiny} />
-          <div className="text-sm lg:text-base m-10 text-center md:text-left">
-            <p className="text-xl lg:text-2xl font-bold">Gym Landing Page</p>
-            <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
-              Tools used for this Project:
-            </p>
-            <ul>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-                &#9733; Tailwind Starter Kit
-              </li>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
-                &#9733; Mob Responsive
-              </li>
-            </ul>
-            <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
-              <div>
-                <ProjectLink
-                  heading={"Source Code"}
-                  link={"https://github.com/thamizh27/destiny-lan-page.git"}
-                />
-              </div>
-              <div className="mt-2 lg:mt-4">
-                <ProjectLink
-                  heading={"Live"}
-                  link={"https://thamizh27.github.io/destiny-lan-page/"}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* card - 4 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
           <ProjectImage image={breakingBad} />
@@ -166,7 +129,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      {/* card - 5 */}
+      {/* card - 4 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
           <ProjectImage image={gallery} />
@@ -205,22 +168,23 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      {/* card - 6 */}
+      {/* card - 5 */}
       <section className="w-full h-full m-auto border-2 border-gray-100">
         <div className="md:flex items-center justify-evenly">
-          <ProjectImage image={parallax} />
+          <ProjectImage image={netflix} />
           <div className="text-sm lg:text-base m-10 text-center md:text-left">
             <p className="text-xl lg:text-2xl font-bold">
-              Parallax Landing Page
+              Netflix Landing Page Clone
             </p>
             <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
               Tools used for this Project:
             </p>
             <ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; HTML</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; CSS</li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; Vanilla JavaScript
               </li>
-              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Rellax.js</li>
               <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
                 &#9733; Mob Responsive
               </li>
@@ -229,15 +193,120 @@ const Projects = () => {
               <div>
                 <ProjectLink
                   heading={"Source Code"}
-                  link={
-                    "https://github.com/thamizh27/parallax-landing-page.git"
-                  }
+                  link={"https://github.com/thamizh27/netflix-landing-page.git"}
                 />
               </div>
               <div className="mt-2 lg:mt-4">
                 <ProjectLink
                   heading={"Live"}
-                  link={"https://thamizh27.github.io/parallax-landing-page/"}
+                  link={"https://thamizh27.github.io/netflix-landing-page/"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* card - 6 */}
+      <section className="w-full h-full m-auto border-2 border-gray-100">
+        <div className="md:flex items-center justify-evenly">
+          <ProjectImage image={destiny} />
+          <div className="text-sm lg:text-base m-10 text-center md:text-left">
+            <p className="text-xl lg:text-2xl font-bold">Gym Landing Page</p>
+            <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
+              Tools used for this Project:
+            </p>
+            <ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Tailwind Starter Kit
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; AOS - Animation On Scroll
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
+            </ul>
+            <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
+              <div>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/destiny-lan-page.git"}
+                />
+              </div>
+              <div className="mt-2 lg:mt-4">
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://thamizh27.github.io/destiny-lan-page/"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* card - 7 */}
+      <section className="w-full h-full m-auto border-2 border-gray-100">
+        <div className="md:flex items-center justify-evenly">
+          <ProjectImage image={piroll} />
+          <div className="text-sm lg:text-base m-10 text-center md:text-left">
+            <p className="text-xl lg:text-2xl font-bold">
+              Piroll static webpage
+            </p>
+            <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
+              Tools used for this Project:
+            </p>
+            <ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Vanilla JavaScript
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Vanilla CSS</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Mob Responsive
+              </li>
+            </ul>
+            <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
+              <div>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/piroll-template"}
+                />
+              </div>
+              <div className="mt-2 lg:mt-4">
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://piroll-design-template.netlify.app/"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* card - 8 */}
+      <section className="w-full h-full m-auto border-2 border-gray-100">
+        <div className="md:flex items-center justify-evenly">
+          <ProjectImage image={astutex} />
+          <div className="text-sm lg:text-base m-10 text-center md:text-left">
+            <p className="text-xl lg:text-2xl font-bold">Demo Streaming App</p>
+            <p className="mt-2 lg:mt-5 lg:text-base font-semibold underline">
+              Tools used for this Project:
+            </p>
+            <ul>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; React</li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">
+                &#9733; Data Fetching
+              </li>
+              <li className="ml-1 mt-2 lg:ml-4 lg:mt-5">&#9733; Vanilla CSS</li>
+            </ul>
+            <div className="mt-2 lg:mt-4 text-blue-800 font-bold text-center">
+              <div>
+                <ProjectLink
+                  heading={"Source Code"}
+                  link={"https://github.com/thamizh27/Astutex"}
+                />
+              </div>
+              <div className="mt-2 lg:mt-4">
+                <ProjectLink
+                  heading={"Live"}
+                  link={"https://astutex-demo-streaming.netlify.app/"}
                 />
               </div>
             </div>
